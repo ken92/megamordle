@@ -1,0 +1,1 @@
+{"mappings":"AAAA,wBACA,aAAA,CACA,YACA","sources":["megamordle/src/main-menu/index.css"],"sourcesContent":["button.main-menu-button {\r\n  display: block;\r\n  margin: 1em 0em;\r\n}\r\n"],"names":[],"version":3,"file":"index.dd2a3d95.css.map"}
