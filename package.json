@@ -18,6 +18,7 @@
     "clean": "rm -rf dist",
     "start-dev": "parcel src/index.html",
     "build": "cross-env NODE_ENV=production parcel build",
+    "postbuild": "sed -i 's/\\/index/.\\/index/g' ./dist/index.html",
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
