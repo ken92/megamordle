@@ -10,12 +10,13 @@
     "esbuild"
   ],
   "source": "src/index.html",
+  "homepage": "https://ken92.github.io/megamordle",
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "scripts": {
     "lint": "eslint src/ --ext .js,.jsx,.ts,.tsx",
     "test": "jest",
     "clean": "rm -rf dist",
-    "start": "parcel src/index.html",
+    "start-dev": "parcel src/index.html",
     "build": "cross-env NODE_ENV=production parcel build",
     "deploy": "gh-pages -d dist"
   },
