@@ -1,13 +1,12 @@
 {
-  "name": "typescript-boilerplate-2021",
+  "name": "megamordle",
   "version": "0.4.2",
-  "description": "Boilerplate for TypeScript projects (Node.js and browser modules)",
-  "author": "Chris Hager <chris@linuxuser.at>",
-  "repository": "https://github.com/metachris/typescript-boilerplate",
+  "description": "aaaaaaaaaaaaaaa",
+  "author": "Dexter Richards",
+  "repository": "",
   "license": "MIT",
   "keywords": [
     "typescript",
-    "boilerplate",
     "esbuild"
   ],
   "main": "./dist/tsc/main.js",
@@ -26,6 +25,8 @@
     "build": "tsc -p tsconfig.json",
     "build-all": "yarn clean && yarn build && yarn esbuild-node && yarn esbuild-browser",
     "esbuild-browser": "esbuild src/browser.ts --bundle --minify --sourcemap=external --outfile=dist/esbuild/browser.js",
+    "postesbuild-browser": "cp src/index.html dist/esbuild/index.html",
+    "postesbuild-browser:dev": "cp src/index.html dist/esbuild/index.html",
     "esbuild-browser:dev": "esbuild src/browser.ts --bundle --outfile=dist/esbuild/browser.js",
     "esbuild-browser:watch": "esbuild src/browser.ts --bundle --watch --outfile=dist/esbuild/browser.js",
     "esbuild-node": "esbuild src/cli.ts --bundle --platform=node --minify --sourcemap=external --outfile=dist/esbuild/cli.js",
